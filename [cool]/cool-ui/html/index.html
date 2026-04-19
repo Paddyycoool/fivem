@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full UI Screens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Small UI Popup -->
+    <div class="popup small" id="smallUI" style="display: none;">
+        <div class="popup-header">
+            <span class="xp-type">+25 Scavenger XP</span>
+            <span class="xp-percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+        </div>
+    </div>
+
+    <!-- Medium UI Popup -->
+    <div class="popup medium" id="mediumUI" style="display: none;">
+        <div class="tabs">
+            <button class="tab-button active" onclick="changeTab('overview')">Overview</button>
+            <button class="tab-button" onclick="changeTab('leaderboard')">Leaderboard</button>
+            <button class="tab-button" onclick="changeTab('items')">Items</button>
+            <button class="tab-button" onclick="changeTab('skills')">Skills</button>
+        </div>
+        <div class="tab-content" id="overview">
+            <h3>XP: 80%</h3>
+            <p>Current Activity: Scavenging</p>
+        </div>
+        <div class="tab-content" id="leaderboard" style="display: none;">
+            <h3>Leaderboard</h3>
+            <ul>
+                <li>Player 1 - 500 XP</li>
+                <li>Player 2 - 400 XP</li>
+                <li>Player 3 - 300 XP</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="items" style="display: none;">
+            <h3>Items</h3>
+            <p>No items available.</p>
+        </div>
+        <div class="tab-content" id="skills" style="display: none;">
+            <h3>Skills</h3>
+            <p>No skills unlocked.</p>
+        </div>
+    </div>
+
+    <!-- Large UI Popup -->
+    <div class="popup large" id="largeUI" style="display: none;">
+        <div class="job-list">
+            <div class="job-card">
+                <h3>Logging</h3>
+                <p>XP: 75%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="job-card">
+                <h3>Fishing</h3>
+                <p>XP: 60%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="job-card">
+                <h3>Mining</h3>
+                <p>XP: 90%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
